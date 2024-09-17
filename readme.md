@@ -1,8 +1,8 @@
 <img src="https://telegra.ph/file/c0e014ff34f34d1056627.png" align="right" width="200" height="200"/>
 
-# Yukki Music <img src="https://img.shields.io/github/v/release/TeamYukki/YukkiMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+# Dns Music <img src="https://img.shields.io/github/v/release/TeamDns/DnsXMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
-[Yukki Music](https://github.com/TeamYukki/YukkiMusicBot) is a powerful Telegram Music + Video Bot written in Python, using Pyrogram and Py-Tgcalls. You can stream songs, videos, and even live streams in your group calls from multiple sources.
+[Dns Music](https://github.com/TeamDns/DnsXMusicBot) is a powerful Telegram Music + Video Bot written in Python, using Pyrogram and Py-Tgcalls. You can stream songs, videos, and even live streams in your group calls from multiple sources.
 
 ### 🎵 Key Features
 - **Supports Multiple Platforms:** YouTube, SoundCloud, Apple Music, Spotify, Resso, Live Streams, Telegram Audios, and Videos.
@@ -20,7 +20,7 @@
 
 ## 🚀 Heroku Deployment
 
-Click the button below to easily deploy **Yukki Music Bot** on Heroku!
+Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 > If you encounter an error during app creation, try forking the repository first.
 
@@ -50,7 +50,7 @@ Click the button below to easily deploy **Yukki Music Bot** on Heroku!
 
 5. **Run the Bot**
    ```bash
-   python3 -m YukkiMusic
+   python3 -m DnsXMusic
    ```
 
 6. **Detach from tmux session**
@@ -58,9 +58,9 @@ Click the button below to easily deploy **Yukki Music Bot** on Heroku!
 
 ___
 
-# 🎶 Yukki Music Configurations
+# 🎶 Dns Music Configurations
 
-To get started with configuring Yukki Music, check out the detailed instructions [here](https://github.com/MISH0009/Vplay-Music/blob/master/config/README.md).
+To get started with configuring Dns Music, check out the detailed instructions [here](https://github.com/MISH0009/Vplay-Music/blob/master/config/README.md).
 
 ---
 
@@ -76,13 +76,13 @@ If you need help or have any questions, feel free to reach out through any of th
 
 # ❤️ Show Your Support
 
-If you'd like to say **thank you** or support the ongoing development of YukkiMusicBot, you can:
+If you'd like to say **thank you** or support the ongoing development of DnsXMusicBot, you can:
 
 - ⭐ [Star the Project](https://github.com/MISH0009/Vplay-Music) on GitHub.
 - 🍴 [Fork the Repository](https://github.com/MISH0009/Vplay-Music) and contribute.
 - 📝 Share your experience with tutorials or articles on [Dev.to](https://dev.to/), [Medium](https://medium.com/), or your personal blog to share your experience.
 
-Together, we can make **YukkiMusic** even better!
+Together, we can make **DnsXMusic** even better!
 
 # 📑 Acknowledgements / Credits
 
@@ -101,4 +101,4 @@ A heartfelt thanks to the following incredible projects and individuals, without
 
 ### Special Thanks
 
-A huge shout-out to [Team Yukki](https://github.com/TeamYukki) for their inspiring work on [YukkiMusicBot](https://github.com/TeamYukki/YukkiMusicBot). Your contributions have been invaluable!
+A huge shout-out to [Team Dns](https://github.com/TeamDns) for their inspiring work on [DnsXMusicBot](https://github.com/TeamDns/DnsXMusicBot). Your contributions have been invaluable!
