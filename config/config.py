@@ -96,7 +96,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/MISH0009/Vplay-Music",
+    "https://github.com/MISH0009/DNS",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
