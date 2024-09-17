@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2024 by TheTeamVivek@Github, < https://github.com/TheTeamVivek >.
+# Copyright (C) 2024 by MISH0009@Github, < https://github.com/MISH0009 >.
 #
 # This file is part of < https://github.com/MISH0009/DNS > project,
 # and is released under the MIT License.
@@ -53,7 +53,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/TheTeamVivek/Extra-Plugin",
+    "https://github.com/MISH0009/Extra-Plugin",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
