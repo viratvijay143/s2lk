@@ -24,13 +24,13 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 > If you encounter an error during app creation, try forking the repository first.
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/MISH0009/Vplay-Music"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/MISH0009/DNS"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a>
 
 ---
 ## 🖇️ VPS Deployment Guide
 
 1. **Get the Required Variables**  
-   Download the [Necessary Variables](https://github.com/MISH0009/Vplay-Music/blob/master/sample.env) for your setup.
+   Download the [Necessary Variables](https://github.com/MISH0009/DNS/blob/master/sample.env) for your setup.
 
 2. **Clone the Repository**
    ```bash
@@ -60,7 +60,7 @@ ___
 
 # 🎶 Dns Music Configurations
 
-To get started with configuring Dns Music, check out the detailed instructions [here](https://github.com/MISH0009/Vplay-Music/blob/master/config/README.md).
+To get started with configuring Dns Music, check out the detailed instructions [here](https://github.com/MISH0009/DNS/blob/master/config/README.md).
 
 ---
 
@@ -68,7 +68,7 @@ To get started with configuring Dns Music, check out the detailed instructions [
 
 If you need help or have any questions, feel free to reach out through any of these channels:
 
-- [GitHub Issues](https://github.com/MISH0009/Vplay-Music/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+): Open a support question on GitHub.
+- [GitHub Issues](https://github.com/MISH0009/DNS/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+): Open a support question on GitHub.
 - [Telegram Profile](https://t.me/DNS_NETWORK): Directly contact the maintainer.
 - [Telegram Support Group](https://t.me/DNS_NETWORK): Join our support group for live assistance.
 
@@ -78,8 +78,8 @@ If you need help or have any questions, feel free to reach out through any of th
 
 If you'd like to say **thank you** or support the ongoing development of DnsXMusicBot, you can:
 
-- ⭐ [Star the Project](https://github.com/MISH0009/Vplay-Music) on GitHub.
-- 🍴 [Fork the Repository](https://github.com/MISH0009/Vplay-Music) and contribute.
+- ⭐ [Star the Project](https://github.com/MISH0009/DNS) on GitHub.
+- 🍴 [Fork the Repository](https://github.com/MISH0009/DNS) and contribute.
 - 📝 Share your experience with tutorials or articles on [Dev.to](https://dev.to/), [Medium](https://medium.com/), or your personal blog to share your experience.
 
 Together, we can make **DnsXMusic** even better!
