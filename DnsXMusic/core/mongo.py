@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2024 by MISH0009@Github, < https://github.com/MISH0009 >.
-#
-# This file is part of < https://github.com/MISH0009/DNS > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/MISH0009/DNS/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
 from pyrogram import Client
@@ -16,15 +6,15 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://adityapatel:aditya310708@cluster0.esldbqp.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://kuldiprathod2003:kuldiprathod2003@cluster0.wxqpikp.mongodb.net/?retryWrites=true&w=majority"
 
 
 if config.MONGO_DB_URI is None:
-    LOGGER(__name__).warning(
-        "No MONGO DB URL found.. Your Bot will work on Dns's Database"
+    LOGGER(name).warning(
+        "𝐍o 𝐌ONGO 𝐃B 𝐔RL 𝐅ound.. 𝐘our 𝐁ot 𝐖ill 𝐖ork 𝐎n 𝐕𝐈𝐏 𝐌𝐔𝐒𝐈𝐂 𝐃atabase"
     )
     temp_client = Client(
-        "Dns",
+        "VIPMUSIC",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -40,5 +30,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Dns
-    pymongodb = _mongo_sync_.Dns
+    mongodb = _mongo_async_.Anon
+    pymongodb = _mongo_sync_.Anon
