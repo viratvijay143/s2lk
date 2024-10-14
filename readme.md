@@ -34,7 +34,7 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 2. **Clone the Repository**
    ```bash
-   git clone https://github.com/MISH0009/Vplay-Music && cd Vplay-Music
+   git clone https://github.com/MISH0009/DNS && cd DNS
    ```
 
 3. **Run the setup**
