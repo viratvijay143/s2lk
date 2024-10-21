@@ -173,8 +173,6 @@ class YouTubeAPI:
             "-g",
             "-f",
             "best[height<=?720][width<=?1280]",
-            "--cookies",
-            cookies(),
             f"{link}",
         ]
         cmd = get_ytdl_options(cmd)
