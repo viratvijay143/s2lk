@@ -64,11 +64,6 @@
         "value": "",
         "required": true
       },
-      "COOKIES": {
-        "description": "Paste your batbin link.",
-        "value": "https://batbin.me",
-        "required": false
-      },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
         "value": "https://github.com/MISH0009/DNS",
