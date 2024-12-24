@@ -54,13 +54,13 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
           [
             InlineKeyboardButton(
-                text="✰ ᴜᴘᴅᴧᴛᴇ ✰", url=f"https://t.me/Dns_Official_Channel"
+                text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📢", url=f"https://t.me/Dns_Official_Channel"
             ),
             InlineKeyboardButton(
-                text="✰ sᴜᴘᴘᴏꝛᴛ ✰", url=f"https://t.me/DNS_NETWORK"
+                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=f"https://t.me/DNS_NETWORK"
           ),
         ],
-        [InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾")],
     ]
     return buttons
 
@@ -69,13 +69,13 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
           [
             InlineKeyboardButton(
-                text="✰ ᴜᴘᴅᴧᴛᴇ ✰", url=f"https://t.me/Dns_Official_Channel"
+                text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📢", url=f"https://t.me/Dns_Official_Channel"
             ),
             InlineKeyboardButton(
-                text="✰ sᴜᴘᴘᴏꝛᴛ ✰", url=f"https://t.me/DNS_NETWORK"
+                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=f"https://t.me/DNS_NETWORK"
           ),
         ],
-        [InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾")],
     ]
     return buttons
 
@@ -94,14 +94,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
           [
             InlineKeyboardButton(
-                text="✰ ᴜᴘᴅᴧᴛᴇ ✰", url=f"https://t.me/Dns_Official_Channel"
+                text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📢", url=f"https://t.me/Dns_Official_Channel"
             ),
             InlineKeyboardButton(
-                text="✰ sᴜᴘᴘᴏꝛᴛ ✰", url=f"https://t.me/DNS_NETWORK"
+                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=f"https://t.me/DNS_NETWORK"
           ),
         ],
         [
-            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"),
         ],
     ]
     return buttons
@@ -111,14 +111,14 @@ def telegram_markup(_, chat_id):
     buttons = [
           [
             InlineKeyboardButton(
-                text="✰ ᴜᴘᴅᴧᴛᴇ ✰", url=f"https://t.me/Dns_Official_Channel"
+                text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📢", url=f"https://t.me/Dns_Official_Channel"
             ),
             InlineKeyboardButton(
-                text="✰ sᴜᴘᴘᴏꝛᴛ ✰", url=f"https://t.me/DNS_NETWORK"
+                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=f"https://t.me/DNS_NETWORK"
           ),
         ],
         [
-            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"),
         ],
     ]
     return buttons
@@ -126,7 +126,7 @@ def telegram_markup(_, chat_id):
 
 ## By Anon
 close_keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="〆 ᴄʟᴏsᴇ 〆", callback_data="close")]]
+    [[InlineKeyboardButton(text="〆 𝖢𝗅𝗈𝗌𝖾 〆", callback_data="𝖢𝗅𝗈𝗌𝖾")]]
 )
 
 ## Search Query Inline
