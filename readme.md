@@ -1,6 +1,6 @@
 <img src="https://files.catbox.moe/q8hcg3.jpg" align="right" width="200" height="200"/>
 
-𝗚𝗮𝗮𝗻𝗮   𝗠𝘂𝘀𝗶𝗰  ᴘᴏᴡᴇʀ ʙʏ sʜɪᴠ sɪɴɢʜ <img src="https://img.shields.io/github/v/release/TeamDns/DnsXMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+𝗚𝗮𝗮𝗻𝗮   𝗠𝘂𝘀𝗶𝗰 ᴘᴏᴡᴇʀᴅ ʙʏ sʜɪᴠ sɪɴɢʜ <img src="https://img.shields.io/github/v/release/TeamDns/DnsXMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
 [Dns Music](https://github.com/TeamDns/DnsXMusicBot) is a powerful Telegram Music + Video Bot written in Python, using Pyrogram and Py-Tgcalls. You can stream songs, videos, and even live streams in your group calls from multiple sources.
 
