@@ -24,7 +24,7 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 > If you encounter an error during app creation, try forking the repository first.
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/MISH0009/DNS"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Rajputshivsingh65/Gaana-Music"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a>
 
 ---
 ## 🖇️ VPS Deployment Guide
@@ -34,7 +34,7 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 2. **Clone the Repository**
    ```bash
-   git clone https://github.com/MISH0009/DNS && cd DNS
+   git clone https://github.com/Rajputshivsingh65/Gaana-Music && cd Gaana-Music
    ```
 
 3. **Run the setup**
@@ -50,7 +50,7 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 5. **Run the Bot**
    ```bash
-   python3 -m DnsXMusic
+   python3 -m Gaana-Music
    ```
 
 6. **Detach from tmux session**
