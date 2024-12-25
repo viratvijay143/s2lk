@@ -1,9 +1,8 @@
 <img src="https://files.catbox.moe/q8hcg3.jpg" align="right" width="200" height="200"/>
 
-𝗚𝗮𝗮𝗻𝗮  
-𝗠𝘂𝘀𝗶𝗰 <img src="https://img.shields.io/github/v/release/TeamDns/DnsXMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+𝗚𝗮𝗮𝗻𝗮  𝗠𝘂𝘀𝗶𝗰  🎶 <img src="https://img.shields.io/github/v/release/TeamDns/DnsXMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
-[Dns Music](https://github.com/TeamDns/DnsXMusicBot) is a powerful Telegram Music + Video Bot written in Python, using Pyrogram and Py-Tgcalls. You can stream songs, videos, and even live streams in your group calls from multiple sources.
+[Gaana Music](https://github.com/TeamDns/DnsXMusicBot) is a powerful Telegram Music + Video Bot written in Python, using Pyrogram and Py-Tgcalls. You can stream songs, videos, and even live streams in your group calls from multiple sources.
 
 ### 🎵 Key Features
 - **Supports Multiple Platforms:** YouTube, SoundCloud, Apple Music, Spotify, Resso, Live Streams, Telegram Audios, and Videos.
@@ -59,7 +58,7 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 ___
 
-# 🎶 Dns Music Configurations
+# 🎶 Gaana Music Configurations
 
 To get started with configuring Dns Music, check out the detailed instructions [here](https://github.com/MISH0009/DNS/blob/master/config/README.md).
 
