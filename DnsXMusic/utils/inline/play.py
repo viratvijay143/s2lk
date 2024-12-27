@@ -1,37 +1,20 @@
+#
+# Copyright (C) 2024 by MISH0009@Github, < https://github.com/MISH0009 >.
+#
+# This file is part of < https://github.com/MISH0009/DNS > project,
+# and is released under the MIT License.
+# Please see < https://github.com/MISH0009/DNS/blob/master/LICENSE >
+#
+# All rights reserved.
+#
 import math
 
-from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from DnsXMusic.utils.formatters import time_to_seconds
 
-
-def track_markup(_, videoid, user_id, channel, fplay):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["P_B_1"],
-                callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
-            ),
-            InlineKeyboardButton(
-                text=_["P_B_2"],
-                callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
-            )
-        ],
-    ]
-    return buttons
-
-
-def stream_markup_timer(_, chat_id, played, dur):
-    played_sec = time_to_seconds(played)
-    duration_sec = time_to_seconds(dur)
-    percentage = (played_sec / duration_sec) * 100
-    anon = math.floor(percentage)
+def get_progress_bar(percentage):
+    umm = math.floor(percentage)
     if 0 < umm <= 10:
         ba = "⚪─────────"
     elif 10 < umm < 20:
