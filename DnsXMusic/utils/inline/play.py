@@ -40,8 +40,8 @@ def get_progress_bar(percentage):
         return "───────────"
 
 
-def get_progress_bar(percentage):
-    umm = math.floor(percentage)
+#def get_progress_bar(percentage):
+#    umm = math.floor(percentage)
     if 0 < umm <= 5:
         bar = "𝐆ααɳα 𝐌υ𝗌𝗂𝖼 𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
     elif 5 <= umm < 10:
