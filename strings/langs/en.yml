@@ -174,7 +174,7 @@ stream_1 : "<blockquote>▣ 𝗚𝗮𝗮𝗻𝗮 𝗠𝘂𝘀𝗶𝗰 𝗦𝘁�
 stream_2 : "<blockquote>▣ 𝗚𝗮𝗮𝗻𝗮 𝗠𝘂𝘀𝗶𝗰 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴</blockquote>\n<blockquote><b>❍ 𝖲𝗍𝗋𝖾𝖺𝗆 𝖳𝗒𝗉𝖾 :</b> 𝖫𝗂𝗏𝖾 𝖲𝗍𝗋𝖾𝖺𝗆 [ 𝖴𝗋𝗅 ]\n<b>❍ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖡𝗒 :</b> {0}</blockquote>"
 
 
-CLOSE_BUTTON  : "𝖢𝗅𝗈𝗌𝖾"
+CLOSE_BUTTON : "𝖢𝗅𝗈𝗌𝖾"
 BACK_BUTTON : "𝖡𝖺𝖼𝗄"
 
 # Start
@@ -214,7 +214,7 @@ ST_B_2 : "𝖯𝗅𝖺𝗒 𝖬𝗈𝖽𝖾"
 ST_B_3 : "𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾"
 ST_B_4 : "𝖵𝗈𝗍𝗂𝗇𝗀 𝖬𝗈𝖽𝖾"
 ST_B_5 : "𝖮𝗇"
-ST_B_6 : "𝖮𝖿𝖿"
+ST_B_6 : "• ʟᴧɴɢᴜᴧɢᴇ "
 ST_B_7 : "𝖠𝗎𝗍𝗁 𝖴𝗌𝖾𝗋𝗌 ➜"
 ST_B_8 : "𝖠𝖽𝗆𝗂𝗇"
 ST_B_9 : "𝖤𝗏𝖾𝗋𝗒𝗈𝗇𝖾"
