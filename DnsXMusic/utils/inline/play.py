@@ -17,27 +17,27 @@ def get_progress_bar(percentage):
     umm = math.floor(percentage)
 
     if 0 < umm <= 10:
-        ba = "─▷─────────"
+        return "─▷─────────"
     elif 10 < umm <= 20:
-        ba = "──▷────────"
+        return "──▷────────"
     elif 20 < umm <= 30:
-        ba = "───▷───────"
+        return "───▷───────"
     elif 30 < umm <= 40:
-        ba = "────▷──────"
+        return "────▷──────"
     elif 40 < umm <= 50:
-        ba = "─────▷─────"
+        return "─────▷─────"
     elif 50 < umm <= 60:
-        ba = "──────▷────"
+        return "──────▷────"
     elif 60 < umm <= 70:
-        ba = "───────▷───"
+        return "───────▷───"
     elif 70 < umm <= 80:
-        ba = "────────▷──"
+        return "────────▷──"
     elif 80 < umm <= 90:
-        ba = "─────────▷─"
+        return "─────────▷─"
     elif 90 < umm <= 100:
-        ba = "──────────▷"
+        return "──────────▷"
     else:
-        ba = "───────────"
+        return "───────────"
 
 #bar of wynk---------------------------------------
     if 0 < umm <= 1:
@@ -250,7 +250,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {ba} {dur}",
+                text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
         ],
@@ -296,7 +296,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {ba} {dur}",
+                text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
         ],
