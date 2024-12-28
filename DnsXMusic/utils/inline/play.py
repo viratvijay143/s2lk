@@ -1,40 +1,43 @@
+#
+# Copyright (C) 2024 by MISH0009@Github, < https://github.com/MISH0009 >.
+#
+# This file is part of < https://github.com/MISH0009/DNS > project,
+# and is released under the MIT License.
+# Please see < https://github.com/MISH0009/DNS/blob/master/LICENSE >
+#
+# All rights reserved.
+#
 import math
 
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-import config
 from DnsXMusic.utils.formatters import time_to_seconds
 
-
-## After Edits with Timer Bar
-
-def stream_markup_timer(_, videoid, chat_id, played, dur):
-    played_sec = time_to_seconds(played)
-    duration_sec = time_to_seconds(dur)
-    percentage = (played_sec / duration_sec) * 100
+def get_progress_bar(percentage):
     umm = math.floor(percentage)
+
     if 0 < umm <= 10:
-        return "─▷─────────"
+        ba "─▷─────────"
     elif 10 < umm <= 20:
-        return "──▷────────"
+        ba "──▷────────"
     elif 20 < umm <= 30:
-        return "───▷───────"
+        ba "───▷───────"
     elif 30 < umm <= 40:
-        return "────▷──────"
+        ba "────▷──────"
     elif 40 < umm <= 50:
-        return "─────▷─────"
+        ba "─────▷─────"
     elif 50 < umm <= 60:
-        return "──────▷────"
+        ba "──────▷────"
     elif 60 < umm <= 70:
-        return "───────▷───"
+        ba "───────▷───"
     elif 70 < umm <= 80:
-        return "────────▷──"
+        ba "────────▷──"
     elif 80 < umm <= 90:
-        return "─────────▷─"
+        ba "─────────▷─"
     elif 90 < umm <= 100:
-        return "──────────▷"
+        ba "──────────▷"
     else:
-        return "───────────"
+        ba "───────────"
 
 #bar of wynk---------------------------------------
     if 0 < umm <= 1:
@@ -239,11 +242,21 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         bar = "𝐓ɦ𝖾 𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐎𝗏𝖾𝗋"
 
 
-   
+def stream_markup_timer(_, videoid, chat_id, played, dur):
+    played_sec = time_to_seconds(played)
+    duration_sec = time_to_seconds(dur)
+    percentage = (played_sec / duration_sec) * 100
+    bar = get_progress_bar(percentage)  # using for getting the bar
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{played} {ba} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{bar}",
                 callback_data="GetTimer",
             )
         ],
@@ -283,7 +296,13 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{played} {ba} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{bar}",
                 callback_data="GetTimer",
             )
         ],
