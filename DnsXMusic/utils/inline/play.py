@@ -69,6 +69,10 @@ def get_progress_bare(percentage):
 def get_progress_baree(percentage):
     umm = math.floor(percentage)
     
+    if 0 < umm <= 100:
+        return "᪥⋟ 𝐆ααɳα 𝐌υ𝗌𝗂𝖼 ⋞᪥"
+    elif 5 <= umm < 200:
+        return "᪥⋟ 𝐆ααɳα 𝐌υ𝗌𝗂𝖼 ⋞᪥"
     else:
         return "᪥⋟ 𝐆ααɳα 𝐌υ𝗌𝗂𝖼 ⋞᪥"
         
