@@ -83,7 +83,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     bar = get_progress_bar(percentage)
-    bare = get_progress_bare(percentage) # using for getting the bar
+    bare = get_progress_bare(percentage)
+    baree = get_progress_baree(percentage) # using for getting the bar
     buttons = [
         [
             InlineKeyboardButton(
@@ -137,6 +138,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     bar = get_progress_bar(percentage)  # using for getting the bar
     bare = get_progress_bare(percentage)
+    baree = get_progress_baree(percentage)
     buttons = [
         [
             InlineKeyboardButton(
