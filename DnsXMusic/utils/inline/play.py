@@ -66,7 +66,14 @@ def get_progress_bare(percentage):
     else:
         return "𝐓ɦ𝖾 𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐎𝗏𝖾𝗋"
 
-
+def get_progress_baree(percentage):
+    umm = math.floor(percentage)
+    
+    else:
+        return "᪥⋟ 𝐆ααɳα 𝐌υ𝗌𝗂𝖼 ⋞᪥"
+        
+        
+        
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
@@ -74,6 +81,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar = get_progress_bar(percentage)
     bare = get_progress_bare(percentage) # using for getting the bar
     buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"{baree}",
+                callback_data="GetTimer",
+            )
+        ],
         [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
@@ -121,6 +134,12 @@ def telegram_markup_timer(_, chat_id, played, dur):
     bar = get_progress_bar(percentage)  # using for getting the bar
     bare = get_progress_bare(percentage)
     buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"{baree}",
+                callback_data="GetTimer",
+            )
+        ],
         [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
