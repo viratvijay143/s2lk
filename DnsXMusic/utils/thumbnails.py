@@ -2,7 +2,6 @@ import os
 import re
 import aiofiles
 import aiohttp
-from DnsXMusic.utils.thumbnails import gen_thumb
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
@@ -67,7 +66,7 @@ def crop_center_circle(img, output_size, border, crop_scale=1.5):
 
 
 
-async def get_thumb(videoid):
+async def gen_thumb(videoid):
     if os.path.isfile(f"cache/{videoid}_v4.png"):
         return f"cache/{videoid}_v4.png"
 
