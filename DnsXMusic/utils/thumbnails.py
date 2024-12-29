@@ -3,10 +3,10 @@ import re
 import aiofiles
 import aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageOps, ImageFilter
+import math
 from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
 from DnsXMusic import app
-import math
 from config import YOUTUBE_IMG_URL
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -86,7 +86,6 @@ def create_rgb_neon_circle(image, center, radius, border_width, steps=30):
         frames.append(temp_image)
 
     return frames
-
 async def gen_qthumb(vidid):
     try:
         query = f"https://www.youtube.com/watch?v={vidid}"
@@ -98,6 +97,7 @@ async def gen_qthumb(vidid):
         return YOUTUBE_IMG_URL
 
 async def gen_thumb(videoid):
+    # Check if the GIF already exists
     if os.path.isfile(f"cache/{videoid}_v4.gif"):
         return f"cache/{videoid}_v4.gif"
 
@@ -124,6 +124,7 @@ async def gen_thumb(videoid):
         except:
             channel = "Unknown Channel"
 
+    # Download the thumbnail
     async with aiohttp.ClientSession() as session:
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
@@ -185,6 +186,7 @@ async def gen_thumb(videoid):
         pass
 
     # Save GIF animation
-    frames[0].save(f"cache/{videoid}_v4.gif", save_all=True, append_images=frames[1:], optimize=False, duration=100, loop=0)
+    gif_path = f"cache/{videoid}_v4.gif"
+    frames[0].save(gif_path, save_all=True, append_images=frames[1:], optimize=False, duration=100, loop=0)
 
-    return f"cache/{videoid}_v4.gif"
+    return gif_path
