@@ -2,12 +2,12 @@ import os
 import re
 import aiofiles
 import aiohttp
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageOps, ImageFilter
 from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
 from DnsXMusic import app
-from config import YOUTUBE_IMG_URL
 import math
+from config import YOUTUBE_IMG_URL
 
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
@@ -62,11 +62,12 @@ def crop_center_circle(img, output_size, border, crop_scale=1.5):
     
     return result
 
-# RGB Neon Border Animation
+# RGB Neon Border Animation for GIF
 def create_rgb_neon_circle(image, center, radius, border_width, steps=30):
     # Create a draw object to draw the neon circle
     draw = ImageDraw.Draw(image)
     
+    frames = []
     for step in range(steps):
         # Calculate the RGB values based on the step (for neon effect)
         red = int((math.sin(step / steps * math.pi * 2) * 127) + 128)
@@ -74,14 +75,17 @@ def create_rgb_neon_circle(image, center, radius, border_width, steps=30):
         blue = int((math.sin((step / steps * math.pi * 2) + (math.pi * 2 / 3)) * 127) + 128)
 
         # Draw the circle with changing RGB color (RGB neon border effect)
-        draw.ellipse([
+        temp_image = image.copy()
+        temp_draw = ImageDraw.Draw(temp_image)
+        temp_draw.ellipse([
             center[0] - radius - border_width + step, 
             center[1] - radius - border_width + step, 
             center[0] + radius + border_width - step, 
             center[1] + radius + border_width - step
         ], outline=(red, green, blue), width=border_width)
+        frames.append(temp_image)
 
-    return image
+    return frames
 
 async def gen_qthumb(vidid):
     try:
@@ -94,8 +98,8 @@ async def gen_qthumb(vidid):
         return YOUTUBE_IMG_URL
 
 async def gen_thumb(videoid):
-    if os.path.isfile(f"cache/{videoid}_v4.png"):
-        return f"cache/{videoid}_v4.png"
+    if os.path.isfile(f"cache/{videoid}_v4.gif"):
+        return f"cache/{videoid}_v4.gif"
 
     url = f"https://www.youtube.com/watch?v={videoid}"
     results = VideosSearch(url, limit=1)
@@ -143,34 +147,27 @@ async def gen_thumb(videoid):
     circle_position = (120, 160)
     background.paste(circle_thumbnail, circle_position, circle_thumbnail)
 
-    # Create the RGB Neon border on the circle
-    create_rgb_neon_circle(background, (circle_position[0] + 200, circle_position[1] + 200), 200, 20)
+    # Create the RGB Neon border animation frames
+    frames = create_rgb_neon_circle(background, (circle_position[0] + 200, circle_position[1] + 200), 200, 20)
 
     text_x_position = 565
-
     title1 = truncate(title)
     draw.text((text_x_position, 180), title1[0], fill=(255, 255, 255), font=title_font)
     draw.text((text_x_position, 230), title1[1], fill=(255, 255, 255), font=title_font)
     draw.text((text_x_position, 320), f"{channel}  |  {views[:23]}", (255, 255, 255), font=arial)
 
-    
     line_length = 580  
-
-    
     red_length = int(line_length * 0.6)
     white_length = line_length - red_length
 
-    
     start_point_red = (text_x_position, 380)
     end_point_red = (text_x_position + red_length, 380)
     draw.line([start_point_red, end_point_red], fill="red", width=9)
 
-    
     start_point_white = (text_x_position + red_length, 380)
     end_point_white = (text_x_position + line_length, 380)
     draw.line([start_point_white, end_point_white], fill="white", width=8)
 
-    
     circle_radius = 10 
     circle_position = (end_point_red[0], end_point_red[1])
     draw.ellipse([circle_position[0] - circle_radius, circle_position[1] - circle_radius,
@@ -186,5 +183,8 @@ async def gen_thumb(videoid):
         os.remove(f"cache/thumb{videoid}.png")
     except:
         pass
-    background.save(f"cache/{videoid}_v4.png")
-    return f"cache/{videoid}_v4.png"
+
+    # Save GIF animation
+    frames[0].save(f"cache/{videoid}_v4.gif", save_all=True, append_images=frames[1:], optimize=False, duration=100, loop=0)
+
+    return f"cache/{videoid}_v4.gif"
