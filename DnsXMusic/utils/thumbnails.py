@@ -64,7 +64,15 @@ def crop_center_circle(img, output_size, border, crop_scale=1.5):
     
     return result
 
-
+async def gen_qthumb(vidid):
+    try:
+        query = f"https://www.youtube.com/watch?v={vidid}"
+        results = VideosSearch(query, limit=1)
+        for result in (await results.next())["result"]:
+            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+        return thumbnail
+    except Exception as e:
+        return YOUTUBE_IMG_URL
 
 async def gen_thumb(videoid):
     if os.path.isfile(f"cache/{videoid}_v4.png"):
