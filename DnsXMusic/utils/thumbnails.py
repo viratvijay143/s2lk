@@ -83,6 +83,16 @@ def create_rgb_neon_circle(image, center, radius, border_width, steps=30):
 
     return image
 
+async def gen_qthumb(vidid):
+    try:
+        query = f"https://www.youtube.com/watch?v={vidid}"
+        results = VideosSearch(query, limit=1)
+        for result in (await results.next())["result"]:
+            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+        return thumbnail
+    except Exception as e:
+        return YOUTUBE_IMG_URL
+
 async def gen_thumb(videoid):
     if os.path.isfile(f"cache/{videoid}_v4.png"):
         return f"cache/{videoid}_v4.png"
