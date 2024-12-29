@@ -13,6 +13,7 @@ motor
 pillow==9.5.0
 psutil
 pytube
+unidecode
 pykeyboard
 py-tgcalls
 python-dotenv
