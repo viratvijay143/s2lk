@@ -1,6 +1,6 @@
-<img src="https://files.catbox.moe/q8hcg3.jpg" align="right" width="200" height="200"/>
+<img src="https://files.catbox.moe/1y57l5.jpg" align="right" width="200" height="200"/>
 
-𝗚𝗮𝗮𝗻𝗮  𝗠𝘂𝘀𝗶𝗰  🎶 <img src="https://img.shields.io/github/v/release/TeamDns/DnsXMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+𝖣𝗇𝗌 𝖬𝗎𝗌𝗂𝖼 🎶 <img src="https://img.shields.io/github/v/release/TeamDns/DnsXMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
 [Gaana Music](https://github.com/TeamDns/DnsXMusicBot) is a powerful Telegram Music + Video Bot written in Python, using Pyrogram and Py-Tgcalls. You can stream songs, videos, and even live streams in your group calls from multiple sources.
 
@@ -24,17 +24,17 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 > If you encounter an error during app creation, try forking the repository first.
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/Rajputshivsingh65/Gaana-Music"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/MISH0009/DNS-MUSIC"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a>
 
 ---
 ## 🖇️ VPS Deployment Guide
 
 1. **Get the Required Variables**  
-   Download the [Necessary Variables](https://github.com/MISH0009/DNS/blob/master/sample.env) for your setup.
+   Download the [Necessary Variables](https://github.com/MISH0009/DNS-MUSIC/blob/master/sample.env) for your setup.
 
 2. **Clone the Repository**
    ```bash
-   git clone https://github.com/Rajputshivsingh65/Gaana-Music && cd Gaana-Music
+   git clone https://github.com/MISH0009/DNS-MUSIC && cd DNS
    ```
 
 3. **Run the setup**
@@ -60,7 +60,7 @@ ___
 
 # 🎶 Gaana Music Configurations
 
-To get started with configuring Dns Music, check out the detailed instructions [here](https://github.com/MISH0009/DNS/blob/master/config/README.md).
+To get started with configuring Dns Music, check out the detailed instructions [here](https://github.com/MISH0009/DNS-MUSIC/blob/master/config/README.md).
 
 ---
 
@@ -68,7 +68,7 @@ To get started with configuring Dns Music, check out the detailed instructions [
 
 If you need help or have any questions, feel free to reach out through any of these channels:
 
-- [GitHub Issues](https://github.com/MISH0009/DNS/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+): Open a support question on GitHub.
+- [GitHub Issues](https://github.com/MISH0009/DNS-MUSIC/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+): Open a support question on GitHub.
 - [Telegram Profile](https://t.me/DNS_NETWORK): Directly contact the maintainer.
 - [Telegram Support Group](https://t.me/DNS_NETWORK): Join our support group for live assistance.
 
