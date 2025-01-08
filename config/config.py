@@ -96,7 +96,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Rajputshivsingh65/Gaana-Music",
+    "https://github.com/MISH0009/DNS-MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -213,7 +213,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://files.catbox.moe/q8hcg3.jpg",
+    "https://files.catbox.moe/owh3j7.jpg",
 )
 
 PING_IMG_URL = getenv(
@@ -223,7 +223,7 @@ PING_IMG_URL = getenv(
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://files.catbox.moe/idufdc.jpg",
+    "https://files.catbox.moe/6tled7.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
