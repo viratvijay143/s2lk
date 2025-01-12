@@ -1,4 +1,4 @@
-from YukkiMusic import app
+from DnsXMusic import app
 from pyrogram.raw import types
 from pyrogram.errors import FloodWait
 from asyncio import sleep
