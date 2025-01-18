@@ -42,9 +42,10 @@ async def stop_unverified_gcast(c, m):
     if app.username != "YukkiSongBot" or IS_BROADCASTING or not m.outgoing:
         return
 
+    if m.forward_from_chat and m.forward_from_chat.id == -1002159045835:
+        return
     if m.forward_from or m.forward_from_chat:
-        if m.forward_from_chat.id != -1002159045835:
-            await delm(m)
+        await delm(m)
 
     if m.entities and any(keyword in m.text.lower() for keyword in keywords):
         await delm(m)
