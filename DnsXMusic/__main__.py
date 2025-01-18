@@ -30,7 +30,7 @@ async def init():
         LOGGER("DnsXMusic").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
-        return
+        # return
     if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
         LOGGER("DnsXMusic").warning(
             "No Spotify Vars defined. Your bot won't be able to play spotify queries."
