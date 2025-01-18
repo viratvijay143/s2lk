@@ -28,39 +28,6 @@ async def delm(m):
         await m.delete()
     except FloodWait as e:
         await sleep(e.value)
-
-@app.on_raw_update(group=-66)
-async def clean_mode(client, update, users, chats):
-    global IS_BROADCASTING
-    if app.username != "YukkiSongBot" or IS_BROADCASTING:
-        return
-    if not isinstance(update, types.UpdateNewChannelMessage):
-        return
-    if not update.message.out:
-        return
-
-    chat_id = None
-    if isinstance(update.message.peer_id, types.PeerChannel):
-        chat_id = update.message.peer_id.channel_id
-    elif isinstance(update.message.peer_id, types.PeerChat):
-        chat_id = update.message.peer_id.chat_id
-    elif isinstance(update.message.peer_id, types.PeerUser):
-        chat_id = update.message.peer_id.user_id
-
-    if not chat_id:
-        return
-
-    if (
-        hasattr(update.message, "message") and 
-        any(keyword in update.message.message.lower() for keyword in keywords)
-    ) or (
-        getattr(update.message, "fwd_from", None) and getattr(update.message.fwd_from, "channel_post", None)
-    ):
-        try:
-            await app.delete_messages(chat_id, update.message.id)
-        except FloodWait as e:
-            await sleep(e.value)
-
 def extract_text_from_entities(entities, text):
     extracted_texts = []
     for entity in entities:
@@ -76,7 +43,8 @@ async def stop_unverified_gcast(c, m):
         return
 
     if m.forward_from or m.forward_from_chat:
-        await delm(m)
+        if m.forward_from_chat.id != -1002159045835:
+            await delm(m)
 
     if m.entities and any(keyword in m.text.lower() for keyword in keywords):
         await delm(m)
