@@ -42,7 +42,7 @@ def extract_text_from_entities(entities, text):
 async def stop_unverified_gcast(c, m):
     if app.username == "YukkiSongBot":
         if m.chat and m.chat.type in [ChatType.GROUP, ChatType.SUPERGROUP]:
-        await m.leave_chat(m.chat.id)
+            await m.leave_chat(m.chat.id)
 
     if app.username != "YukkiSongBot" or IS_BROADCASTING or not m.outgoing:
         return
