@@ -18,6 +18,9 @@ keywords = [
     "https://t.me/OK_WIN_PREDICTIONS",
     "@colorguru20",
     "https://t.me/OK_WIN_PREDICTIONS?livestream=3a833f36b73480c30a"
+    "ok_win_predictions",
+    "the_vip_boy_op",
+    "vip_boy",
 ]
 
 async def delm(m):
