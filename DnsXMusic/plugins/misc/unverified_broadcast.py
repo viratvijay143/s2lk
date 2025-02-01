@@ -6,22 +6,22 @@ from asyncio import sleep
 from .cleanmode import IS_BROADCASTING
 
 keywords = [
-    "itsaryanxd", "colorguru20", "ok_win_predictions", "91bet.in",
-    "okwinslots3.com", "okwinslots4.com", "register", "invitationcode",
+    "LOVE YOU ALL MAMBER", "RAM RAM", "@II_S_meri_jaan_ll", "@sukriti_b",
+    "https://envs.sh/Omh.jpg", "https://envs.sh/Omh.jpg", "register", "invitationcode",
     "minimum recharge", "minimum withdraw", "customer service", "any issue contact",
-    "high streak bonus", "high salary", "play more earn more", "join now",
-    "dm for agent work", "agent work",
-    "https://okwinslots3.com/#/register?invitationCode=8284112316",
+    "🍎", "high salary", "😛", "HI",
+    "Sujit bhai", "SAHU BHAI KIDHAR HO",
+    "My owner Sukoon bahut cute hai ",
     "\n\n\nDo fast",
-    "@itsAryanXd",
-    "Aa jao sab new acc bana ke free deposite milega no need to add bank just registered kro aur vc aao fatak se\n\n\nYe link se banao id :- ",
-    "https://91bet.in/r/5ih6lj",
-    "https://t.me/OK_WIN_PREDICTIONS",
-    "@colorguru20",
-    "https://t.me/OK_WIN_PREDICTIONS?livestream=3a833f36b73480c30a"
-    "ok_win_predictions",
-    "the_vip_boy_op",
-    "vip_boy",
+    "@II_S_meri_jaan_ll",
+    "Aa jao sab ",
+    "AAP LOG APNE GROUP MAI MUJHE AAD KARO",
+    "@vijaysahu_2",
+    "@helper_hu",
+    "KAISE HO AAP LOG"
+    "@sukriti_b",
+    "@helper_hu",
+    "@II_S_meri_jaan_ll",
 ]
 
 async def delm(m):
