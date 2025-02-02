@@ -48,17 +48,17 @@ def get_progress_bare(percentage):
     elif 5 <= umm < 20:
         return "♨ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ 𝐌υ𝗌𝗂𝖼 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍 ♨"
     elif 10 <= umm < 30:
-        return "♨ 𝐃ɳѕ 𝐌υ𝗌𝗂𝖼 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌 ♨"
+        return "♨ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ𓆩⁣⃝─⃛͢𓆪•⏤‌✶ꭗ‌𝐃 𝐌ᴜsɪᴄ˼ ™| 𓂃•‹𝟹 ♨"
     elif 15 <= umm < 40:
-        return "♨ 𝐃ɳѕ 𝐌υ𝗌𝗂𝖼 𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ ♨"
+        return "♨ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ 𝐌υ𝗌𝗂𝖼 𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ ♨"
     elif 20 <= umm < 50:
-        return "♨ 𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀 ♨"
+        return "♨ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ𓆩⁣⃝─⃛͢𓆪•⏤‌✶ꭗ‌𝐃 𝐌ᴜsɪᴄ˼ ™| 𓂃•‹𝟹 ♨"
     elif 25 <= umm < 60:
-        return "♨ 𝐃ɳѕ 𝐌υ𝗌𝗂𝖼 𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ ♨"
+        return "♨ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ𓆩⁣⃝─⃛͢𓆪•⏤‌✶ꭗ‌𝐃 𝐌ᴜsɪᴄ˼ ™| 𓂃•‹𝟹 ♨"
     elif 30 <= umm < 70:
-        return "♨ 𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼 ♨"
+        return "♨ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼 ♨"
     elif 35 <= umm < 80:
-        return "♨ 𝐃ɳѕ 𝐌υ𝗌𝗂𝖼 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍 ♨"
+        return "♨𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ 𝐌υ𝗌𝗂𝖼 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍 ♨"
     elif 40 <= umm < 90:
         return "♨ 𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐆ααɳα 𝐌υ𝗌𝗂𝖼 ♨"
     elif 45 <= umm < 100:
@@ -70,11 +70,11 @@ def get_progress_baree(percentage):
     umm = math.floor(percentage)
     
     if 0 < umm <= 100:
-        return "᪥⋟ 𝐃ɳѕ 𝐌υ𝗌𝗂𝖼 ⋞᪥"
+        return "᪥⋟ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ𓆩⁣⃝─⃛͢𓆪•⏤‌✶ꭗ‌𝐃 𝐌ᴜsɪᴄ˼ ™| 𓂃•‹𝟹 ⋞᪥"
     elif 5 <= umm < 200:
-        return "᪥⋟ 𝐃ɳѕ 𝐌υ𝗌𝗂𝖼 ⋞᪥"
+        return "᪥⋟ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ𓆩⁣⃝─⃛͢𓆪•⏤‌✶ꭗ‌𝐃 𝐌ᴜsɪᴄ˼ ™| 𓂃•‹𝟹 ⋞᪥"
     else:
-        return "᪥⋟ 𝐃ɳѕ 𝐌υ𝗌𝗂𝖼 ⋞᪥"
+        return "᪥⋟ 𝆺𝅥⃝🍃 ⃪ͥ͢ ᷟ➻🇸‌𝐔𝐊𝐎𝐎🇳🕊️༎ࠫ𓆩⁣⃝─⃛͢𓆪•⏤‌✶ꭗ‌𝐃 𝐌ᴜsɪᴄ˼ ™| 𓂃•‹𝟹 ⋞᪥"
         
         
         
@@ -106,14 +106,14 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/vijsysahu_2"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/vijaysahu_2"),
         ],
     ]
     return buttons
@@ -123,14 +123,14 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/vijaysahu_2"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/vijaysahu_2"),
         ],
     ]
     return buttons
@@ -164,14 +164,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/vijaysahu_2"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/vijaysahu_2"),
         ],
     ]
     return buttons
@@ -181,14 +181,14 @@ def telegram_markup(_, chat_id):
     buttons = [
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/vijaysahu_2"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/vijaysahu_2"),
         ],
     ]
     return buttons
