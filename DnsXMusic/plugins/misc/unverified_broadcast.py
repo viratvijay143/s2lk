@@ -6,7 +6,7 @@ from asyncio import sleep
 from .cleanmode import IS_BROADCASTING
 
 keywords = [
-    "LOVE YOU ALL MAMBER", "RAM RAM", "@II_S_meri_jaan_ll", "@sukriti_b",
+    "LOVE YOU ALL MAMBER", "RAM RAM", "GOOD MORNING", "@sukriti_b",
     "https://envs.sh/Omh.jpg", "https://envs.sh/Omh.jpg", "register", "invitationcode",
     "minimum recharge", "minimum withdraw", "customer service", "any issue contact",
     "🍎", "high salary", "😛", "HI",
